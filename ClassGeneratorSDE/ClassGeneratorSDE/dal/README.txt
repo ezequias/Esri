@@ -1,0 +1,1 @@
+Output folder from ClassGenerator.
