@@ -84,7 +84,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="ClassTest.cs" />
     <Compile Include="dal\domains\AncillaryRoleDomain.cs">
       <SubType>Code</SubType>
