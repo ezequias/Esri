@@ -108,7 +108,7 @@ namespace ClassGeneratorSDE
         {
             try
             {
-                #region Verifica se arquivo existe e se não existe pergunta se quer criar
+                #region Verifies if the there are files and asks if want to create
                 System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
                 var dirInfo = new DirectoryInfo(txtBoxCaminho.Text);
                 if (dirInfo.GetFiles().Length == 0)
@@ -139,7 +139,7 @@ namespace ClassGeneratorSDE
         private void GerarArquivos()
         {
             GerarDominios();
-            // Gerando arquivos do tipo FeatureClass
+            // Generating FeatureClass files
             lstBoxArquivos.Items.Clear();
             for (int i = 0; i < treeViewDatasets.Nodes.Count; i++)
             {
@@ -150,7 +150,7 @@ namespace ClassGeneratorSDE
             }
 
 
-            // Gerando arquivos do tipo Table
+            // Generating Table files
             for (var i = 0; i < treeViewTables.Nodes.Count; i++)
             {
                 if (treeViewTables.Nodes[i].Checked)
@@ -219,7 +219,7 @@ namespace ClassGeneratorSDE
                     var itemDominio = (t as ListItem);
                     if (itemDominio != null)
                     {
-                        string varName = ChangeCharacters(itemDominio.Valor.ToString());
+                        string varName = Utils.ChangeCharacters(itemDominio.Valor.ToString());
                         if (varName != itemDominio.Valor)
                         {
                             tw.WriteLine(ident + ident + "/// <summary>");
@@ -422,40 +422,7 @@ namespace ClassGeneratorSDE
             tw.WriteLine(ident + ident + "}");
         }
 
-        private string ChangeCharacters(string key)
-        {
-            key = key
-                .Replace("¹", "1")
-                .Replace("²", "2")
-                .Replace("³", "3")
-                .Replace("ª", "a")
-                .Replace("º", "o")
-
-                .Replace("ã", "a")
-                .Replace("â", "a")
-                .Replace("á", "a")
-                .Replace("à", "a")
-                .Replace("ä", "a")
-
-                .Replace("Ã", "A")
-                .Replace("Â", "A")
-                .Replace("Á", "A")
-                .Replace("À", "A")
-                .Replace("Ä", "A")
-
-                .Replace("ê", "e")
-                .Replace("é", "e")
-                .Replace("è", "e")
-                .Replace("ë", "e")
-
-                .Replace("ê", "e")
-                .Replace("é", "e")
-                .Replace("è", "e")
-                .Replace("ë", "e")
-
-                .Replace("õ", "o");
-            return new Regex("[^a-zA-Z0-9_]+").Replace(key, "_");
-        }
+       
 
 
         private static bool CampoEhSubtipo(String fieldName, IFeatureClass classe)
@@ -472,10 +439,10 @@ namespace ClassGeneratorSDE
         }
 
         /// <summary>
-        /// Retorna todos os elementos do domínio na ordem em que aparecem na sua definição
+        /// Returns all domain elements in the order they appears
         /// </summary>
-        /// <param name="nomeDominio">Nome do domínio que se deseja ler os dados</param>
-        /// <returns>Lista com os elementos do tipo Cod,Descrição para utilização no sistema em geral</returns>
+        /// <param name="nomeDominio">Domain name</param>
+        /// <returns>List of elements as Cod,Description</returns>
         public ArrayList GetDominios(String nomeDominio, IWorkspace ws)
         {
             var workSpaceDomains = (IWorkspaceDomains)ws;
@@ -510,7 +477,6 @@ namespace ClassGeneratorSDE
         {
             string retorno = "object";
 
-
             try
             {
                 System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
@@ -534,7 +500,7 @@ namespace ClassGeneratorSDE
             }
             catch (Exception)
             {
-                MessageBox.Show("Não foi possível...");
+                MessageBox.Show("Impossible to retrieve type");
             }
             finally
             {
