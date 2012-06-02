@@ -11,11 +11,11 @@ Send comments/questions/patches to our github page https://github.com/ezequias/E
 
 In order to compile and execute the application, you must have the following the following requirements
 
-     MS Visual C# 2008 Express edition	# See http://goo.gl/Lcuae
-     ArcGIS Desktop					  	# See http://goo.gl/zRZQc
-     libraries					      	# ESRI.ArcGIS.DataSourcesGDB.dll,  
-										  ESRI.ArcGIS.Geodatabase.dll, ESRI.ArcGIS.Geometry.dll, 
-										  ESRI.ArcGIS.System.dll, ESRI.ArcGIS.Version.dll
+     MS Visual C# 2008 EE	# See http://goo.gl/Lcuae
+     ArcGIS Desktop		  	# See http://goo.gl/zRZQc
+     libraries			   	# ESRI.ArcGIS.DataSourcesGDB.dll,  
+						    ESRI.ArcGIS.Geodatabase.dll, ESRI.ArcGIS.Geometry.dll, 
+							ESRI.ArcGIS.System.dll, ESRI.ArcGIS.Version.dll
 
 
 == Usage ==
