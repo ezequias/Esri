@@ -1,5 +1,5 @@
 			   Class Generator 1.1 (for ArcGIS 10)
-------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 This program has the intent to generate model class from Esri ArcGIS geodatabase elements (like FeatureClasses, Tables, Domains, Subtypes and Relationships). His main idea is to simplify and be a base for common development from a common Esri developer.
 

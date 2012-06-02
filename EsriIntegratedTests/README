@@ -1,5 +1,5 @@
 			   Esri Integrated Tests 1.0
-------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 This program has the intent make the Esri kind developer able to produce automatic integrated tests within Visual Studio. Beyond unit tests the integrated tests are a wonderful tool to trace program usage, integrity and adaptability to a behavior that sometimes could change.
 
