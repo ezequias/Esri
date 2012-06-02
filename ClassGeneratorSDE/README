@@ -13,7 +13,8 @@ In order to compile and execute the application, you must have the following the
 
      MS Visual C# 2008 Express edition	# See http://goo.gl/Lcuae
      ArcGIS Desktop					  	# See http://goo.gl/zRZQc
-     libraries					      	# ESRI.ArcGIS.DataSourcesGDB.dll,  ESRI.ArcGIS.Geodatabase.dll, ESRI.ArcGIS.Geometry.dll, 
+     libraries					      	# ESRI.ArcGIS.DataSourcesGDB.dll,  
+										  ESRI.ArcGIS.Geodatabase.dll, ESRI.ArcGIS.Geometry.dll, 
 										  ESRI.ArcGIS.System.dll, ESRI.ArcGIS.Version.dll
 
 
