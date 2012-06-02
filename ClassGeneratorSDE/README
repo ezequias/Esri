@@ -22,14 +22,3 @@ In order to compile and execute the application, you must have the following the
 
     You can run from Visual C# 2008 Express Edition or from Visual Studio 2008 or later.
 	You can also run from executable ClassGeneratorSDE.exe in the debug or release folder (created after compilling the code)
-
-== Desired Enhancements ==
-
-	# Hability to generate DAL with NET 3.5 lower or superior versions (get, set)
-	# Add comments on Tables or FeatureClasses elements on Geodatabase (alias)
-	# Add default value property to class
-	# Add alias to each field on property description
-	# Make templates to make many language generation (C#, Java, Pyton)
-	# Add range domain values to domain classes (when happens)
-	# Try to make at design time an exceptions (if technically possible)
-	# Create an about screen
