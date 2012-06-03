@@ -148,6 +148,7 @@ namespace ClassGeneratorSDE
             // 
             // btGerar
             // 
+            this.btGerar.Enabled = false;
             this.btGerar.Location = new System.Drawing.Point(482, 109);
             this.btGerar.Name = "btGerar";
             this.btGerar.Size = new System.Drawing.Size(75, 23);

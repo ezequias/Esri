@@ -10,8 +10,7 @@ namespace ClassGeneratorSDE
 
         public void Teste()
         {
-           NEOSDE_PT_PONTO_GEOGRAFICO pg = new NEOSDE_PT_PONTO_GEOGRAFICO();
-            pg.CD_INDD_MATERIAL_PG = DO_INDD_MATERIAL._Nulo
+          //Make your test here
         }
     }
 }

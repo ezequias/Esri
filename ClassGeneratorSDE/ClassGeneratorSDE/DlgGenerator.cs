@@ -45,10 +45,6 @@ namespace ClassGeneratorSDE
 
         private void BtConnectarClick(object sender, EventArgs e)
         {
-            //NEOSDE_PT_PONTO_GEOGRAFICO pg = new NEOSDE_PT_PONTO_GEOGRAFICO();
-            
-
-
             Ws = null;
             _pPropSet = new PropertySetClass();
             _pSdeFact = new SdeWorkspaceFactory();
@@ -93,6 +89,7 @@ namespace ClassGeneratorSDE
                     }
                 }
 
+                btGerar.Enabled = true;
             }
             catch (Exception ex)
             {
@@ -226,7 +223,7 @@ namespace ClassGeneratorSDE
                             tw.WriteLine(ident + ident + "/// " + itemDominio.Valor);
                             tw.WriteLine(ident + ident + "/// </summary>");
                         }
-                        tw.WriteLine(ident + ident + "public const " + EscreveTipo(itemDominio.Chave) + " " + "_" + ChangeCharacters(itemDominio.Valor.ToString()) +
+                        tw.WriteLine(ident + ident + "public const " + EscreveTipo(itemDominio.Chave) + " " + "_" + Utils.ChangeCharacters(itemDominio.Valor.ToString()) +
                                      " = " +
                                      DefineValor(itemDominio.Chave) + ";");
                     }
@@ -405,14 +402,14 @@ namespace ClassGeneratorSDE
             {
                 tw.WriteLine(ident + ident + ident + "internal class " + domain.Key.ToLower());
                 tw.WriteLine(ident + ident + ident + "{");
-                var varName = ChangeCharacters(domain.Key.ToString());
+                var varName = Utils.ChangeCharacters(domain.Key.ToString());
                 if (varName != domain.Key)
                 {
                     tw.WriteLine(ident + ident + ident + ident + "//");
                     tw.WriteLine(ident + ident + ident + ident + varName);
                     tw.WriteLine(ident + ident + ident + ident + "//");
                 }
-                tw.WriteLine(ident + ident + ident + ident + "public const string " + ChangeCharacters(domain.Key) + " = " + domain.Key);
+                tw.WriteLine(ident + ident + ident + ident + "public const string " + Utils.ChangeCharacters(domain.Key) + " = " + domain.Key);
                 tw.WriteLine(ident + ident + ident + ident + "public const string " + domain.Value   + " = " + domain.Value);
                 tw.WriteLine(ident + ident + ident + "}");
                 tw.WriteLine();
