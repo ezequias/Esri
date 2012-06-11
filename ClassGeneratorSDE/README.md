@@ -7,7 +7,9 @@ It makes the understanding faster and the developing much more faster as you don
 
 Send comments/questions/patches to our github page https://github.com/ezequias/Esri/issues/1
 
-== Minimal requirements ==
+
+Minimal requirements
+-----------
 
 In order to compile and execute the application, you must have the following the following requirements
 
@@ -16,6 +18,15 @@ In order to compile and execute the application, you must have the following the
      libraries			   	# ESRI.ArcGIS.DataSourcesGDB.dll,  
 						    ESRI.ArcGIS.Geodatabase.dll, ESRI.ArcGIS.Geometry.dll, 
 							ESRI.ArcGIS.System.dll, ESRI.ArcGIS.Version.dll
+
+
+
+License
+-----------
+
+To see a complete license file of this project please hit
+
+https://github.com/ezequias/Esri/blob/master/ClassGeneratorSDE/License.txt
 
 
 Usage
