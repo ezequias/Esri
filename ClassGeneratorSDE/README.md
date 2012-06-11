@@ -18,7 +18,19 @@ In order to compile and execute the application, you must have the following the
 							ESRI.ArcGIS.System.dll, ESRI.ArcGIS.Version.dll
 
 
-== Usage ==
+Usage
+-----------
 
     You can run from Visual C# 2008 Express Edition or from Visual Studio 2008 or later.
 	You can also run from executable ClassGeneratorSDE.exe in the debug or release folder (created after compilling the code)
+
+Roadmap
+-----------
+
+The roadmap to the application can be checked at the project issue tracker in the following resources.
+
+Release 1.2
+https://github.com/ezequias/Esri/issues?milestone=1&page=1&state=open
+
+Release 1.3
+https://github.com/ezequias/Esri/issues?milestone=2&page=1&state=open
